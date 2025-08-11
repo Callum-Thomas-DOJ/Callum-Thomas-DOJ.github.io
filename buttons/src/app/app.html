@@ -1,0 +1,517 @@
+<div class="container my-5">
+  <h1>
+    Custom Buttons
+  </h1>
+
+  <hr>
+
+  <h2>
+    Default Button (<code>.btn-cts</code>)
+  </h2>
+  <p>
+    Using Bootstrap's <code>button-variant</code> mixin, we can create our custom button:
+  </p>
+  <div class="d-flex flex-row w-100 align-items-center justify-contents-start gap-3">
+    <div class="col-auto">
+      <div class="p-2 border">
+        <button type="button" class="btn btn-cts">Custom Button</button>
+      </div>
+      <p class="text-center">White<br>background</p>
+    </div>
+    <div class="col-auto">
+      <div class="p-2 bg-primary">
+        <button type="button" class="btn btn-cts">Custom Button</button>
+      </div>
+      <p class="text-center">Primary<br>background</p>
+    </div>
+    <div class="col-auto">
+      <div class="p-2 bg-secondary">
+        <button type="button" class="btn btn-cts">Custom Button</button>
+      </div>
+      <p class="text-center">Secondary<br>background</p>
+    </div>
+  </div>
+  <p>
+    These three buttons are all the same, they are just showcased against common background colours
+    used across the Children's Court site.
+  </p>
+  <h3>States</h3>
+  <hr>
+  <h4><code>:hover</code> state</h4>
+  <p>
+    By applying a <code>.hover</code> class to the buttons, we can simulate their style when the buttons
+    are hovered over by the mouse. In addition to these colours, the cursor is a pointer type cursor.
+  </p>
+  <div class="d-flex flex-row w-100 align-items-center justify-contents-start gap-3">
+    <div class="col-auto">
+      <div class="p-2 border">
+        <button type="button" class="btn btn-cts hover">Custom Button</button>
+      </div>
+      <p class="text-center">White<br>background</p>
+    </div>
+    <div class="col-auto">
+      <div class="p-2 bg-primary">
+        <button type="button" class="btn btn-cts hover">Custom Button</button>
+      </div>
+      <p class="text-center">Primary<br>background</p>
+    </div>
+    <div class="col-auto">
+      <div class="p-2 bg-secondary">
+        <button type="button" class="btn btn-cts hover">Custom Button</button>
+      </div>
+      <p class="text-center">Secondary<br>background</p>
+    </div>
+  </div>
+  <hr>
+  <h4><code>:focus-visible</code> state</h4>
+  <p>
+    By applying a <code>.focus-visible</code> class to the buttons, we can simulate their style when
+    the buttons are focused via keyboard. Note the similarity to the hover state styles, but there is
+    the additional <code>focus-ring</code> surrounding the button. As can be seen below, this is not
+    always visible and relies on a lighter background colour.
+  </p>
+  <div class="d-flex flex-row w-100 align-items-center justify-contents-start gap-3">
+    <div class="col-auto">
+      <div class="p-2 border">
+        <button type="button" class="btn btn-cts focus-visible">Custom Button</button>
+      </div>
+      <p class="text-center">White<br>background</p>
+    </div>
+    <div class="col-auto">
+      <div class="p-2 bg-primary">
+        <button type="button" class="btn btn-cts focus-visible">Custom Button</button>
+      </div>
+      <p class="text-center">Primary<br>background</p>
+    </div>
+    <div class="col-auto">
+      <div class="p-2 bg-secondary">
+        <button type="button" class="btn btn-cts focus-visible">Custom Button</button>
+      </div>
+      <p class="text-center">Secondary<br>background</p>
+    </div>
+  </div>
+  <hr>
+  <h4><code>:active</code> state</h4>
+  <p>
+    By applying an <code>.active</code> class to the buttons, we can simulate their style when
+    the buttons are in an <code>:active</code> state, usually when the mouse is actively clicking
+    on the button. Note the similarity to the previous states with an inset <code>box-shadow</code>
+    for a subtle visual effect.
+  </p>
+  <div class="d-flex flex-row w-100 align-items-center justify-contents-start gap-3">
+    <div class="col-auto">
+      <div class="p-2 border">
+        <button type="button" class="btn btn-cts active">Custom Button</button>
+      </div>
+      <p class="text-center">White<br>background</p>
+    </div>
+    <div class="col-auto">
+      <div class="p-2 bg-primary">
+        <button type="button" class="btn btn-cts active">Custom Button</button>
+      </div>
+      <p class="text-center">Primary<br>background</p>
+    </div>
+    <div class="col-auto">
+      <div class="p-2 bg-secondary">
+        <button type="button" class="btn btn-cts active">Custom Button</button>
+      </div>
+      <p class="text-center">Secondary<br>background</p>
+    </div>
+  </div>
+  <hr>
+  <h4><code>disabled</code> state</h4>
+  <p>
+    By applying the <code>.disabled</code> class to the <code>&lt;button&gt;</code> element, we
+    can simulate the disabled state styles on the buttons. In this state, the user will be unable
+    to click the button, and none of the other state styles will apply.
+  </p>
+  <div class="d-flex flex-row w-100 align-items-center justify-contents-start gap-3">
+    <div class="col-auto">
+      <div class="p-2 border">
+        <button type="button" class="btn btn-cts disabled">Custom Button</button>
+      </div>
+      <p class="text-center">White<br>background</p>
+    </div>
+    <div class="col-auto">
+      <div class="p-2 bg-primary">
+        <button type="button" class="btn btn-cts disabled">Custom Button</button>
+      </div>
+      <p class="text-center">Primary<br>background</p>
+    </div>
+    <div class="col-auto">
+      <div class="p-2 bg-secondary">
+        <button type="button" class="btn btn-cts disabled">Custom Button</button>
+      </div>
+      <p class="text-center">Secondary<br>background</p>
+    </div>
+  </div>
+  <hr>
+  <h3>Properties</h3>
+  <p>
+    Our custom button variant uses the following CSS properties:
+  </p>
+  <table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        <th scope="col">State</th>
+        <th scope="col">Property</th>
+        <th scope="col">CSS Property</th>
+        <th scope="col">Value</th>
+        <th scope="col">Comment</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row"></th>
+        <td>
+          Text Colour
+        </td>
+        <td>
+          <code>color</code>
+        </td>
+        <td style="background-color: #194658; color: white">
+          #194658
+        </td>
+        <td>
+          Used as the text colour of the buttons in TeamSite website.
+        </td>
+      </tr>
+      <tr>
+        <th scope="row"></th>
+        <td>
+          Background Colour
+        </td>
+        <td class="text-nowrap">
+          <code>background-color</code>
+        </td>
+        <td style="background-color: #BCE2E7; color: black">
+          #BCE2E7
+        </td>
+        <td>
+          Used as the background colour of the buttons in TeamSite website.
+        </td>
+      </tr>
+      <tr>
+        <th scope="row"></th>
+        <td>
+          Border Colour
+        </td>
+        <td>
+          <code>border-color</code>
+        </td>
+        <td style="background-color: #205D76; color: white">
+          #205D76
+        </td>
+        <td>
+          Used as the border colour of the buttons in TeamSite website.
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">
+          <code>:hover</code>
+        </th>
+        <td>
+          Text Colour
+        </td>
+        <td>
+          <code>color</code>
+        </td>
+        <td style="background-color: #194658; color: white">
+          #194658
+        </td>
+        <td>
+          Used as the hover state text colour of the buttons in TeamSite website.
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">
+          <code>:hover</code>
+        </th>
+        <td class="text-nowrap">
+          Background Colour
+        </td>
+        <td>
+          <code>background-color</code>
+        </td>
+        <td style="background-color: #C9DD6B; color: black">
+          #C9DD6B
+        </td>
+        <td>
+          Used as the hover state background colour of the buttons in TeamSite website.
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">
+          <code>:hover</code>
+        </th>
+        <td>
+          Border Colour
+        </td>
+        <td>
+          <code>border-color</code>
+        </td>
+        <td style="background-color: #205D76; color: white">
+          #205D76
+        </td>
+        <td>
+          Used as the hover state border colour of the buttons in TeamSite website.
+        </td>
+      </tr>
+      <tr>
+        <th class="text-nowrap" scope="row">
+          <code>:focus-visible</code>
+        </th>
+        <td>
+          Text Colour
+        </td>
+        <td>
+          <code>color</code>
+        </td>
+        <td style="background-color: #194658; color: white">
+          #194658
+        </td>
+        <td>
+          Used as the focus state text colour of the buttons in TeamSite website.
+        </td>
+      </tr>
+      <tr>
+        <th class="text-nowrap" scope="row">
+          <code>:focus-visible</code>
+        </th>
+        <td>
+          Background Colour
+        </td>
+        <td>
+          <code>background-color</code>
+        </td>
+        <td style="background-color: #C9DD6B; color: black">
+          #C9DD6B
+        </td>
+        <td>
+          Used as the focus state background colour of the buttons in TeamSite website.
+        </td>
+      </tr>
+      <tr>
+        <th class="text-nowrap" scope="row">
+          <code>:focus-visible</code>
+        </th>
+        <td>
+          Border Colour
+        </td>
+        <td>
+          <code>border-color</code>
+        </td>
+        <td style="background-color: #205D76; color: white">
+          #205D76
+        </td>
+        <td>
+          Used as the focus state border colour of the buttons in TeamSite website.
+        </td>
+      </tr>
+      <tr>
+        <th class="text-nowrap" scope="row">
+          <code>:focus-visible</code>
+        </th>
+        <td>
+          Outline
+        </td>
+        <td>
+          <code>outline</code>
+        </td>
+        <td>
+          <code>0</code>
+        </td>
+        <td>
+          Set by Bootstrap 5.3 to remove any browser defaults.
+        </td>
+      </tr>
+      <tr>
+        <th class="text-nowrap" scope="row">
+          <code>:focus-visible</code>
+        </th>
+        <td>
+          Box Shadow
+        </td>
+        <td>
+          <code>box-shadow</code>
+        </td>
+        <td style="background-color: rgba(31, 90, 114, 0.5);">
+          <code>0 0 0 0.25rem rgba(31, 90, 114, 0.5)</code>
+        </td>
+        <td>
+          Calculated and set by Bootstrap 5.3 using border and text colours.
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">
+          <code>:active</code>
+        </th>
+        <td>
+          Text Colour
+        </td>
+        <td>
+          <code>color</code>
+        </td>
+        <td style="background-color: #194658; color: white">
+          #194658
+        </td>
+        <td>
+          Used as the active state text colour of the buttons in TeamSite website.
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">
+          <code>:active</code>
+        </th>
+        <td>
+          Background Colour
+        </td>
+        <td>
+          <code>background-color</code>
+        </td>
+        <td style="background-color: #C9DD6B; color: black">
+          #C9DD6B
+        </td>
+        <td>
+          Used as the active state background colour of the buttons in TeamSite website.
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">
+          <code>:active</code>
+        </th>
+        <td>
+          Border Colour
+        </td>
+        <td>
+          <code>border-color</code>
+        </td>
+        <td style="background-color: #205D76; color: white">
+          #205D76
+        </td>
+        <td>
+          Used as the active state border colour of the buttons in TeamSite website.
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">
+          <code>:active</code>
+        </th>
+        <td>
+          Box Shadow
+        </td>
+        <td>
+          <code>box-shadow</code>
+        </td>
+        <td class="text-nowrap" style="box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);">
+          <code>inset 0 3px 5px rgba(0, 0, 0, 0.125)</code>
+        </td>
+        <td>
+          Inset box shadow set by Bootstrap 5.3. to give a 3D visual effect.
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">
+          <code>:disabled</code>
+        </th>
+        <td>
+          Text Color
+        </td>
+        <td>
+          <code>color</code>
+        </td>
+        <td style="background-color: #194658; color: white">
+          #194658
+        </td>
+        <td>
+          Used as the disabled state text colour of the buttons in TeamSite website.
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">
+          <code>:disabled</code>
+        </th>
+        <td>
+          Pointer Events
+        </td>
+        <td>
+          <code>pointer-events</code>
+        </td>
+        <td>
+          <code>none</code>
+        </td>
+        <td>
+          Prevents anything happening when user attempts to click. Default behaviour.
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">
+          <code>:disabled</code>
+        </th>
+        <td>
+          Background Colour
+        </td>
+        <td>
+          <code>background-color</code>
+        </td>
+        <td style="background-color: #BCE2E7;">
+          #BCE2E7
+        </td>
+        <td>
+          Used as the disabled state background colour in TeamSite website.
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">
+          <code>:disabled</code>
+        </th>
+        <td>
+          Border Colour
+        </td>
+        <td>
+          <code>border-color</code>
+        </td>
+        <td style="background-color: #205D76; color: white">
+          #205D76
+        </td>
+        <td>
+          Used as the disabled state border colour in TeamSite website.
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">
+          <code>:disabled</code>
+        </th>
+        <td>
+          Opacity
+        </td>
+        <td>
+          <code>opacity</code>
+        </td>
+        <td>
+          <code>0.65</code> (65%)
+        </td>
+        <td>
+          Set by Bootstrap 5.3, coincidentally same as TeamSite website.
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">
+          <code>:disabled</code>
+        </th>
+        <td>
+          Box Shadow
+        </td>
+        <td>
+          <code>box-shadow</code>
+        </td>
+        <td>
+          <code>none</code>
+        </td>
+        <td>
+          Removed by Bootstrap 5.3.
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
